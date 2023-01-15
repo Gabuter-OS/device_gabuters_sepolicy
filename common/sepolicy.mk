@@ -16,16 +16,16 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/common/public
+    device/gabuters/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/common/private
+    device/gabuters/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/common/dynamic
+    device/gabuters/sepolicy/common/dynamic
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/common/dynamic \
-    device/arrow/sepolicy/common/vendor
+    device/gabuters/sepolicy/common/dynamic \
+    device/gabuters/sepolicy/common/vendor
 endif
